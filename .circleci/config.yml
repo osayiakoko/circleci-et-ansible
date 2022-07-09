@@ -75,9 +75,8 @@ jobs:
   # Smoke Testing: Roll back on failure
   roll_back:
     docker:
-      - image: alpine:latest
+      - image: amazon/aws-cli
     steps:
-      - checkout
       - run: 
           name: Simulate error
           command: return 1
