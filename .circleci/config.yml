@@ -81,7 +81,7 @@ jobs:
       - run: 
           name: Simulate error
           command: return 1
-      - destroy_environment
+      - destroy_environment:
         when: on_fail
 
 # Invoke jobs via workflows
